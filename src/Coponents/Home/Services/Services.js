@@ -1,5 +1,4 @@
 import React from 'react';
-import './Services.css';
 import fluoride from '../../../images/001-dental.png';
 import cavity from '../../../images/tooth (1).png';
 import whitening from '../../../images/tooth.png';

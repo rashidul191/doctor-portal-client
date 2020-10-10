@@ -8,7 +8,6 @@ const HeaderMain = () => {
                 <h1 style={{color:'#3A4256'}}>Your New Smile <br/> Starts Here</h1>
                 <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias repellendus tempore voluptatibus nulla, harum deserunt eveniet provident tempora dignissimos?</p>
                 <button className="btn btn-primary">GET APPOINTMENT</button>
-
             </div>
             <div className="col-md-6">
                 <img src={chair} alt="" className="img-fluid"/>

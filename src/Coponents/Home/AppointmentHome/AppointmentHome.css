@@ -1,0 +1,15 @@
+.appointment-container{
+    height: 400px;
+    width: 100%;
+    background: url('../../../images/Mask\ Group\ 4.png');
+    background-size: cover;   
+}
+.appointment-style{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(66, 74, 92);
+    
+}
+.style-appointment{
+    margin: 0 auto;
+}
