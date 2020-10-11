@@ -14,7 +14,7 @@ const AppointmentHome = () => {
                         <h5 style ={{color:'#1CC7C1'}}>APPOINTMENT</h5>
                         <h1 className="text-white">Make an appointment <br/>Today</h1>
                         <p className="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error odit tenetur, libero molestiae dolorum, culpa ipsa laudantium nobis neque veniam deserunt obcaecati repellendus fuga officia vitae dolorem repudiandae nulla. Dicta!</p>
-                        <button className="btn btn-primary">Learn More</button>
+                        <button className="btn btn-brand text-white">Learn More</button>
                     </div>
                 </div>
             </div>
