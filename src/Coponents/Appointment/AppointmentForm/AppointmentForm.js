@@ -19,9 +19,25 @@ Modal.setAppElement('#root')
 const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
 
     const { register, handleSubmit, errors } = useForm();
+
     const onSubmit = data => {
-        console.log(data);
-        closeModal();
+        data.service = appointmentOn;
+        data.date = date;
+        date.created = new Date();
+
+        fetch('http://localhost:5000/addAppointment', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(success => {
+                if (success) {
+                    closeModal();
+                    alert('Appointment created successfully.');
+                }
+            })
+
     }
 
     // const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -60,8 +76,8 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
                     </div>
 
                     <div className="form-group">
-                        <input class="form-control" type="text" name="date" ref={register({ required: true })} placeholder="mm/dd/yy" />
-                        {errors.date && <span className="text-danger">This field is required</span>}
+                        <input class="form-control" type="text" name="dateOfBath" ref={register({ required: true })} placeholder="mm/dd/yy" />
+                        {errors.dateOfBath && <span className="text-danger">This field is required</span>}
                     </div>
                     <div className="form-group row">
                         <div className="col-4">
